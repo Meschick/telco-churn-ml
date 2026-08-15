@@ -1,0 +1,71 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# Python environment metadata
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+
+# Data and artifacts (local/project runtime)
+data/raw/
+data/processed/
+artifacts/
+models/
+checkpoints/
+
+# Environment configuration
+.env
+.env.*
+
+# Local credentials
+secrets/
+*.pem
+*.key
+
+# Documentation and planning files used only for local development
+# Keep them out of git history
+DEVELOPMENT_PLAN.md
+docs/
+
+# Optional: keep project notes local
+notes/
+local/
