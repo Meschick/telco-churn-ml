@@ -1,0 +1,71 @@
+
+EDA SUMMARY - TELCO CUSTOMER CHURN
+============================================================
+
+DIMENSÕES DO DATASET
+Linhas: 7043
+Colunas: 21
+
+CHURN
+Clientes com churn:
+1869
+
+Clientes sem churn:
+5174
+
+Taxa de churn:
+26.54%
+
+BALANCEAMENTO
+Classe majoritária:
+No
+
+Classe minoritária:
+Yes
+
+Razão majoritária/minoritária:
+2.77
+
+CORRELAÇÃO COM CHURN
+Churn             1.000
+MonthlyCharges    0.193
+SeniorCitizen     0.151
+TotalCharges     -0.199
+tenure           -0.352
+
+TOP CATEGORIAS POR TAXA DE CHURN
+        Variavel        Categoria  Clientes  Churn  Taxa_Churn_%
+   PaymentMethod Electronic check      2365   1071     45.285412
+        Contract   Month-to-month      3875   1655     42.709677
+ InternetService      Fiber optic      3096   1297     41.892765
+  OnlineSecurity               No      3498   1461     41.766724
+     TechSupport               No      3473   1446     41.635474
+    OnlineBackup               No      3088   1233     39.928756
+DeviceProtection               No      3095   1211     39.127625
+ StreamingMovies               No      2785    938     33.680431
+PaperlessBilling              Yes      4171   1400     33.565092
+     StreamingTV               No      2810    942     33.523132
+
+TOP COMBINAÇÕES TENURE x MONTHLY CHARGES
+                                   Clientes  Churn  Taxa_Churn_%
+tenure_group monthly_charge_group                               
+0-6 meses    Alta                       215    166         77.21
+7-12 meses   Alta                       162    112         69.14
+0-6 meses    Média                      590    370         62.71
+13-24 meses  Alta                       294    151         51.36
+0-6 meses    Baixa                      676    248         36.69
+25-48 meses  Alta                       581    205         35.28
+7-12 meses   Média                      270     95         35.19
+13-24 meses  Média                      369    105         28.46
+25-48 meses  Média                      521     93         17.85
+7-12 meses   Baixa                      273     46         16.85
+
+ARQUIVOS GERADOS
+- categorical_churn_analysis.csv
+- numeric_churn_analysis.csv
+- tenure_churn_analysis.csv
+- tenure_monthlycharges_churn_analysis.csv
+- 01_churn_distribution.png
+- 02_top_categories_churn.png
+- 03_correlation_heatmap.png
+- 04_tenure_churn.png
